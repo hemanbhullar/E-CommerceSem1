@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        .main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,white);}
+        nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{color: black;}
+body{
+background-image:url("data:image/jpeg;base64,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");
+}
+    </style>
+</head>
+<body>
+        <font color="white"><div class="main">
+        <nav>
+        <div class="logo">
+            <img src="C:\Users\HP\Pictures\Screenshots\mobile-phone-app-letter-m-logo-icon-design-template-elements_7280-583.jpg" width="150px">
+        </div>
+        <div class="nav-links">
+            <ul style="background-color: azure;">
+                <li><input type="search" name="Search" id="" placeholder="Search"></li>
+                <li><a href="file:///D:/IWT/html/html%20new/home.html"><h3><i>Home</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/Smart_Phones.html"><h3><i>Smart Phones</i></h3></a></li>
+                <li><a href="https://www.totalleecase.com/collections/thin-iphone-cases"><h3><i>Accessories</i></h3></a></li>
+                <li><a href="https://www.apple.com/in/tv-home/"><h3><i>Tv and Home</i></h3></a></li>
+                <li><a href=file:///D:/IWT/html/html%20new/Smart_Phones.html><h3><i>Back</i></h3></a></li>
+                <li><a href=""><h3><i>Contact us</i></h3></a></li>
+            </ul>
+        </div>
+    </nav>
+    <form method="post">
+        <label for="id1"><b>First Name:<b>&ensp;&ensp;&ensp;&ensp;</label>
+        <input type="text" id="id1" required>
+        <label for="id2">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>Last Name:</b>&ensp;&ensp;&ensp;&ensp;</label>
+        <input type="text" id="id2" required><br><br><br>
+        <table><tr><td>Product Name: <input type="text"></td><td>&ensp;Company Name: <input type="text"></td>
+        <td colspan="10">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<img src="C:\Users\HP\Pictures\Screenshots\products.jpg"width="300px"></td><td>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</td></tr></table>
+        <label for="id3"><h2>Address:</h2></label>
+        <textarea name="Address" id="id3" cols="30" rows="10" required></textarea><br><br>
+        <label for="id4">Country</label>
+        <select name="country" required>
+          
+            <option value="India">India</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="USA">USA</option>
+              <option value="Australia">Australia</option>
+              <option value="Africa">Africa</option>
+              <option value="Europe">canada</option>
+        </select><br><br><br>
+        <label for="id5"><b>State</b></label>
+        <select name="State" required>
+        <option value="Haryana">Haryana</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="Maharastra">Maharastra</option>
+        </select>
+        <label for="id6"><h2>PIN CODE</h2></label>
+        <input type="number" id="id6" required>
+        </form>
+    </div>
+    <div>
+        <form>
+            <label for="id7"><h2>Payment Method:</h2>
+    
+                Debit card: or credit card:<br><div aria-colspan="4"><img src="C:\Users\HP\Pictures\Screenshots\HDFC-Bank-logo.png"width="200px"><img src="C:\Users\HP\Pictures\Screenshots\Yes_Bank_logo.png"width="250px"><img src="C:\Users\HP\Pictures\Screenshots\World_Bank-Logo.wine.svg"width="150px"></div>
+                CARD Number:</label>
+                <input type="number" id="id7" required>(16 digit number)<br><br>
+                <label for="id7"><b>Valid upto:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b></label>
+                <input type="number" id="id7" required>month&ensp;&ensp;&ensp;<input type="number" id="id7">year<br>
+                <button style="background-color:darkgrey;"><font color="white"><h4>pay now</h4></font></button><br><img src="https://st2.depositphotos.com/1431107/7783/v/950/depositphotos_77835968-stock-illustration-100-secure-icon.jpg" width="50px">
+        </form>
+    </div>
+    <div>
+    <p>For more information about product contact us:</p>
+    <h1>Contact us:</h1>
+    <ul type="square">
+        <li>Vidit (Mobile No: 93503-31173)</li>
+        <li>Heman Bhullar (Mobile No: 95186-53809)</li>
+        <li>Harsh Yadav (Mobile No: 98714-89552)</li>
+        <li>Janinder Jain (Mobile No: 96536-99268)</li>
+    </ul>
+    </div>
+    </font>
+    
+   
+</body>
+</html>

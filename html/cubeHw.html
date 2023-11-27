@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Animation</title>
+    <style>
+        @keyframes rotate
+         {
+          from{
+              transform: rotateX(25deg) rotateY(-25deg);
+          }  
+          to{
+              transform:rotateX(-270deg) rotateY(-270deg);
+          }
+         }
+        .cube{
+            position: relative;
+            height:200px;
+            width: 200px;
+            margin: 300px;
+            transition: all 1s;
+            transform-style: preserve-3d;
+            perspective: 4000px;
+            transform: rotateX(25deg) rotateY(-25deg);
+            animation: rotate 4s ease-in-out 4 alternate;
+        }
+        .face{
+            height:100%;
+            width: 100%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+        .one{
+            background-color: crimson;
+            transform: rotateY(-90deg) translateX(100px) translateZ(100px);
+        }
+        .two{
+            background-color: blueviolet;
+            transform: rotateX(90deg) translateY(100px) translateZ(100px);
+        }
+        .three{
+            background-color: brown;
+            transform: rotateY(90deg) translateX(-100px) translateZ(100px);
+        }
+        .four{
+            background-color: khaki;
+            transform: rotateZ(90deg) translateZ(200px) translateX(-0px);
+            
+        }
+        .five{
+            background-color: chocolate;
+            }
+        .six{
+            background-color: green;
+            transform: rotateX(90deg) translateY(100px) translateZ(-100px);}
+        
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="face one"></div>
+        <div class="face two"></div>
+        <div class="face three"></div>
+        <div class="face four"></div>
+        <div class="face five"></div>
+        <div class="face six"></div>
+    </div>
+</body>
+</html>

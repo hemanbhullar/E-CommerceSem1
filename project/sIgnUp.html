@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type=""image/x-icon" href="D:\IWT\html\project\electrohub logo.PNG">
+    <title>Electrohub.com</title>
+    <style>
+        .main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background:radial-gradient(rgb(29, 211, 199)60%,rgb(83, 71, 162));
+}
+        nav{
+    width: 90%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;}
+    .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    border: 2px dotted black;
+    border-radius: 50%;
+}
+.nav-links ul li:hover{
+    background-color: darkcyan;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+}
+.main1{
+    margin: 100px;
+    margin-top: 40px;
+    margin-left: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    height: 580px;
+    display: flex;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url("https://cdn.dribbble.com/users/3432202/screenshots/7090834/media/b27b345dc25d5ae622b249f604d0dfb0.gif") no-repeat center;
+    z-index: 9999;
+    
+}
+    </style>
+</head>
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <div class="main">
+    <nav>
+        <div class="logo">
+            <img src="D:\IWT\html\project\electrohub logo.PNG" width="150px" style="border-radius: 20px;margin-right: 50px;">
+        </div>
+        <div class="nav-links">
+            <ul style="background-color: rgb(101, 87, 196);border-radius: 20px;" >
+                <li><a href="#Home"><h3><i>Home</i></h3></a></li>
+                <li><a href="#Smart Phone"><h3><i>Smart Phones</i></h3></a></li>
+                <li><a href="#Accessories"><h3><i>Accessories</i></h3></a></li>
+                <li><a href="#Tv and home"><h3><i>Tv and Home</i></h3></a></li>
+                <li><a href="#Aboutus"><h3><i>About us</i></h3></a></li>
+            </ul>
+    </div>
+    </nav>
+    <div class="main1">
+        <div>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJrqXwSM19DFSs_Cyc4rfWUq3sQgOUVxCvmw&usqp=CAU" width="600px">
+        </div>
+        <div style="text-align: center;margin-left: 50px;">
+            <h1>create Account</h1>
+            <form action="file:///D:/IWT/html/html%20new/login.html" onsubmit="document.getElementById('submit').innerHTML=alert('Your account has been created.CONTINUE')" method="post">
+                <label for="Fname"><i>First Name:</i>&ensp;</label><input type="text" id="fname" name="fname" style="border-radius: 20px;" required><br><br>
+                <label for="Lname"><i>Last Name:</i>&ensp;&nbsp;</label><input type="text" id="fname" name="lname" style="border-radius: 20px;" required><br><br>
+                <label for="email"><i>Email ID:</i>&ensp;&ensp;&ensp;</label><input type="email" id="fname" name="email" style="border-radius: 20px;"required><br><br>
+                <label for="password"><i>password:</i>&ensp;&ensp;&ensp;</label><input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" style="border-radius: 20px;"required><br><br>
+                <label for="confirm_password"><i>Confirm pass:</i>&ensp;</label><input type="password" id="confirm_password" name="newPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" style="border-radius: 20px;"required><br><br>
+                <label for="Mobile"><i>Mobile No:</i>&ensp;&ensp;&ensp;</label><input type="text" id="mobile" name="mobile number" style="border-radius: 20px;" required><br><br>
+                <button style="border-radius: 20px;"><input type="submit" value="sign up" style="border-radius: 20px;"></button>
+                <p id="submit"></p>
+                </form>
+                <script>
+                    var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+                </script>
+        </div>
+
+    </div>
+    </div>
+    <script>
+        var preloader=document.getElementById("loading");
+        function myFunction(){
+            preloader.style.display= 'none';
+        }
+    </script>
+</body>
+</html>

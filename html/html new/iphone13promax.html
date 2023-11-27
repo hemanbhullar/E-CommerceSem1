@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .geeks{
+            text-align: center;
+        }
+        h1{position: relative;}
+        .geeks::before {
+    content: "";
+    top: -2px;
+    left: -2px;
+    position: absolute;
+    border: 3px dotted transparent;
+    border-radius: 20px;
+    animation: animate 4s ease-in-out infinite alternate;
+}
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #14e9ed;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+ 
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #14e9ed;
+        border-right-color: #14e9ed;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+ 
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #14e9ed;
+        border-right-color: #14e9ed;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+.geeks::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    border-radius: 20px;
+    background: transparent;
+    border: 3px dotted transparent;
+}
+ 
+.geeks::after {
+    animation: animates 4s ease-in-out infinite alternate;
+}
+ 
+@keyframes animates {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #14e9ed;
+    }
+ 
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #14e9ed;
+        border-left-color: #14e9ed;
+    }
+ 
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color:#14e9ed;
+        border-left-color: #14e9ed;
+    }
+}
+@keyframes rotation {
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+#phone{
+    position: relative;
+    animation: rotation 4s ease-in-out infinite alternate;
+}
+.feature{
+            float: left;
+        }
+        @keyframes colorchange {
+            from{color:black}
+            to{color:red}
+        }
+        @keyframes transform {
+            from{transform: translateX(0px);}
+            to{transform: translateX(750px);}
+        }
+        .feature1{
+            position: relative;
+            animation-name: colorchange,transform;
+            animation-duration: 4s,7s;
+            animation-iteration-count: infinite,infinite;
+            animation-duration: alternate,alternate;
+        }
+        @media screen and (max-width:1100px){
+            video{width:500px;}
+        }
+        @media  screen and (max-width:900px) {
+            video{width: 300px;}
+        }
+        .list p{color: rgb(98, 95, 95);}
+        #more{display:none}
+        .main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,white);}
+        nav{
+    width: 100%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;}
+    .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    border: 2px dotted black;
+    border-radius: 50%;
+}
+.nav-links ul li:hover{
+    background-color: darkcyan;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="D:\IWT\html\project\electrohub logo.PNG" width="150px" style="border-radius: 20px;">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="file:///D:/IWT/html/html%20new/home.html"><font color="black"><h3><i>Home</i></h3></font></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/Smart_Phones.html"><h3><i>Smart Phones</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/accessories.html"><h3><i>Accessories</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/TV-And-Home.html"><h3><i>Tv and Home</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/aboutus.html"><h3><i>About us</i></h3></a></li>
+            </ul>
+            <a href="file:///D:/IWT/html/html%20new/login.html"><button onclick="document.getElementById('alert').innerHTML=alert('CONFIRM FOR LOGOUT')" style="background-color:black;"><font color="white"><i id="alert" style="cursor: pointer;">LOG OUT</i></font></button></a>
+        </div>
+    </nav>
+    <h1 style="background-image: linear-gradient(black,white);border-radius: 20px; color: #14e9ed;" class="geeks">Iphone 13 pro max</h1>
+    <div class="feature">
+            <video loop muted autoplay width="800px" height="500px">
+                <source src="C:\Users\HP\Downloads\Introducing iPhone 13 Pro _ Apple.mp4" type="video/mp4">
+            </video>
+    </div>
+    <div style="background-color: orange;overflow: hidden;margin-top: 50px;">
+        <h2 class="feature1">Features are given below:</h2>
+    </div>
+    <div class="list">
+        <ul style="margin-left:52%;">
+            <li><h3 style="font-size: 30px;">Our biggest camera upgrade ever.</h3></li>
+            <p>All-new Pro camera system. Advanced low-light performance. Incredible detail with macro photography.</p>
+            <li><h3 style="font-size: 30px;">Cinematic mode</h3></li>
+            <p>adds shallow depth of field automatically. You can also shift focus after you shoot</p>
+            <spam><spam id="less">...</spam><spam id="more"><ul><li><h2>Super Retina XDR display with ProMotion.</h2></li></ul> Experience a faster, brighter, more responsive display.</spam></spam>
+            <button onclick="myFunction()" id="mybtn">Read more</button>
+            <script>
+                function myFunction(){
+                  var less=document.getElementById('less');
+                  var moreText=document.getElementById('more');
+                  var btnText=document.getElementById('mybtn');
+                  if (less.style.display==="none"){
+                      less.style.display="inline";
+                      btnText.innerHTML="Read more";
+                      moreText.style.display="none";
+                  }
+                  else{
+                      less.style.display="none";
+                      btnText.innerHTML="Read less";
+                      moreText.style.display="inline";
+                  }
+                }
+            </script>
+            <a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;"><br><br><b>₹1,50,000.00</b><br><button>Buy Now</button></a>
+        </ul>
+    </div>
+    </div>
+    <div>
+        <spam><b>Color selection:</b></spam>
+        <form method="post">
+            <select name="color" id="color" required>
+                <option value="blue" style="background-color: rgb(110, 110, 209);"></option>
+                <option value="black" style="background-color: black;"></option>
+                <option value="white" style="background-color: white;"></option>
+                <option value="red" style="background-color: red;"></option>
+            </select>
+            <input type="submit" value="select">
+         </form>   
+    </div>
+</body>
+</html>

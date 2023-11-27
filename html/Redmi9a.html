@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="shortcut icon" type=""image/x-icon" href="D:\IWT\html\project\electrohub logo.PNG">
+<head>
+    <title>Electrohub.com</title>
+    <link rel="stylesheet" href="redmi9a.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="D:\IWT\html\project\electrohub logo.PNG" width="150px">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="file:///D:/IWT/html/html%20new/home.html"><font color="black"><h3><i>Home</i></h3></font></a></li>
+                    <li><a href="file:///D:/IWT/html/html%20new/Smart_Phones.html"><h3><i>Smart Phones</i></h3></a></li>
+                    <li><a href="file:///D:/IWT/html/html%20new/accessories.html"><h3><i>Accessories</i></h3></a></li>
+                    <li><a href="file:///D:/IWT/html/html%20new/TV-And-Home.html"><h3><i>Tv and Home</i></h3></a></li>
+                    <li><a href="file:///D:/IWT/html/html%20new/aboutus.html"><h3><i>About us</i></h3></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay">    
+            </div>
+            <img src="C:\Users\HP\Pictures\Screenshots\mobile.png" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="C:\Users\HP\Pictures\Screenshots\camera.png">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>13MP rear camera with AI portrait, AI scene recognition, HDR, pro mode | 5MP front camera. Hybrid Sim Slot : Yes
+                            </p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="C:\Users\HP\Pictures\Screenshots\processor.png">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>Android v10 operating system with upto 2.0GHz clock speed Mediatek Helio G25 octa core processor</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="C:\Users\HP\Pictures\Screenshots\display.png">
+                    <div>
+                        <h1>Display</h1>
+                        <p>16.58 centimeters (6.53 inch) HD+ multi-touch capacitive touchscreen with 1600 x 720 pixels resolution, 268 ppi pixel density and 20:9 aspect ratio
+                            </p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="C:\Users\HP\Pictures\Screenshots\battery.png">
+                    <div>
+                        <h1>Battery</h1>
+                        <p>5000mAH lithium-polymer large battery with 10W wired charger in-box
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        <div class="controls">
+            <img src="C:\Users\HP\Pictures\Screenshots\arrow.jpg" id="upBtn">
+            <h3>Features</h3>
+            <img src="C:\Users\HP\Pictures\Screenshots\arrow.jpg" id="downBtn">
+        </div>
+    </div>
+    
+
+    <script>
+      var circle = document.getElementById("circle");
+      var upBtn = document.getElementById("upBtn");
+      var downBtn = document.getElementById("downBtn");
+      var rotateValue= circle.style.transform;
+      var rotateSum;
+      upBtn.onclick = function(){
+          rotateSum=rotateValue +"rotate(-90deg)";
+          circle.style.transform=rotateSum;
+          rotateValue = rotateSum;
+      }
+      downBtn.onclick = function(){
+          rotateSum=rotateValue +"rotate(90deg)";
+          circle.style.transform=rotateSum;
+          rotateValue = rotateSum;
+      }
+      </script>
+      </body>
+</html>

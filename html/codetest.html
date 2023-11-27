@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<HEAD>
+    <TITLE>ADDING AND UPDATE</TITLE>
+</HEAD>
+
+<BODY>
+    <h1><strong>Adding and updation in List of Elements:</strong></h1>
+
+    <input type="text" id="inp">
+    <input type="button" value="ADD" onclick="add()">
+    <input type="button" value="DISPLAY" onclick="display()">
+    <input type="button" value="UPDATE" onclick="update()">
+    
+    <p id="dis">
+
+    </p>
+    <script>
+        var a=[];
+        var i=0;
+        function add()
+        {
+            
+            a[i]=document.getElementById("inp").value;
+            alert("Element " +a[i]+" added at index "+i);
+            i++;
+            document.getElementById("inp").value="";
+        
+        
+        }
+        function display()
+        {
+            var p="";
+            var j;
+            for (j=0;j<i;j++)
+            {
+                p=p+"Element "+j+ "=" +a[j]+"<br>";
+            }
+            document.getElementById("dis").innerHTML=p;
+        }
+
+        function update()
+        {
+
+            var op="ELEMENTS AFTER UPDATION: "
+            var itemAdd = prompt("Enter element to update");
+            var index = prompt("Update at index:");
+
+            if (index > a.length-1){
+                var ask = confirm("Want to add element at the end?");
+                if (ask){
+                    a.push(itemAdd);
+                }else{
+                    alert("Invalid index value.")
+                }
+            }else{
+                a[index] = itemAdd; 
+            }
+            var myString = a.join(' ');
+
+            document.getElementById("dis").innerHTML=op  + myString; 
+        }
+    
+    
+    </script>
+    
+</BODY>
+</HTML>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Adding and updation in List of Elements:</h1>
+
+    <input type="text" id="item">
+    <button onclick="add()">Add</button>
+    <button onclick="display()">Display</button>
+    <button onclick="update()">Update</button>
+
+    <div id="display"></div>
+
+    <script>
+        var listElements = [];
+        function add(){
+            var item = document.getElementById("item");
+            listElements.push(item.value);
+            alert(`Element ${item.value} added at index ${listElements.length-1}.`);
+            item.value = '';
+        };
+
+        function display(){
+            var displayArea = document.getElementById('display');
+            for(var i=0; i<listElements.length; i++){
+                displayArea.innerHTML += `Element ${i} = ${listElements[i]} <br>`;
+            }
+        };
+
+        function update(){
+            var itemAdd = prompt("Enter element to update");
+            var index = prompt("Update at index:");
+
+            if (index > listElements.length-1){
+                var ask = confirm("Want to add element at the end?");
+                if (ask){
+                    listElements.push(itemAdd);
+                }else{
+                    alert("Inavlid index value.")
+                }
+            }else{
+                listElements[index] = itemAdd; 
+            }
+        }
+    </script>
+</body>
+</html>

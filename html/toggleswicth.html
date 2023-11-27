@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #toggle{
+            width: 100px;
+            height:30px;
+            border: 2px black solid;
+            border-radius: 20px;
+        }
+        #slider{
+            width:34px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="toggle" onclick="toggle()">
+        <div id="slider" style="float: left;" ></div>
+            
+        </div>
+    </div>
+    <h1 id="text">Click On The Toggle Button</h1>
+    <script>
+        var float='left';
+        function toggle(){
+            if(float=='left'){
+                float='right';
+                document.getElementById('slider').style.float='right';
+                document.getElementById('text').style.color="white";
+                document.body.style.backgroundColor="black";
+                document.getElementById('toggle').style.backgroundColor="white";
+            }
+            else{ document.getElementById('slider').style.float='left';
+        float='left';
+    document.getElementById('text').style.color="black";
+    document.body.style.backgroundColor="white";};
+        }
+    </script>
+</body>
+</html>

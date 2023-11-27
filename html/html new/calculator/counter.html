@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p.next{
+        position: absolute;
+        top: 100px;
+    }
+    p.animate{
+        transition: all 0.5s;
+        top:0px;
+    }
+</style>
+<body>
+    <div>
+        
+        <input type="number"  id="number"><br><input type="submit" value="start counter" onclick="startCounter()">
+       
+    </div>
+    <div id="counter-container">
+    <div class="counter">
+     <p class="current">0</p>
+     <p class="next">1</p>
+    </div>
+    </div>
+    <script>
+      var countInterval;
+      function startCounter(){
+          var number=parseInt(document.getElementById('number').value);
+          if (isNaN(number)){
+              alert("please enter a number");
+              clearInterval(countInterval);
+              return;
+          };
+          if(number<1||number>9){
+              alert("number is out of range");
+              clearInterval(countInterval);
+              return;
+          }
+          var currentNo=document.querySelector(".counter .current");
+          var nextno=document.querySelector(".counter .next");
+          var count=0;
+          resetNumber(currentNo,nextno);
+          clearInterval(countInterval);
+          countInterval=setInterval(function(){
+          if(count==number){
+              clearInterval(countInterval);
+              alert('counter has stopped');
+              return;
+          }
+          increaseCount(currentNo,nextno);
+          count++;
+      },1000);};
+      function resetNumber(currentNo,nextno,end){
+          currentNo.innerText=0;
+          nextno.innerText=1;
+      };
+      function increaseCount(currentNo,nextno){
+     nextno.classList.add('animate');
+setTimeout(function(){
+    currentNo.innerText=nextno.innerText;
+    nextno.classList.remove('animate');
+    nextno.innerText=parseInt(nextno.innerText)+1;
+},500)
+      };
+    </script>
+</body>
+</html>

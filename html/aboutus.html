@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>Electrohub.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type=""image/x-icon" href="D:\IWT\html\project\electrohub logo.PNG">
+<style>
+  @keyframes rotation {
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+  }
+  .w3-quarter:hover{
+       position: relative;
+       animation: rotation 4s ease-in-out infinite alternate;
+  }
+nav{
+    width: 100%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+.nav-links ul li:hover{
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+.nav-links ul li a:hover{
+	color: black;
+	text-shadow: 2px 2px darkslateblue;
+}
+#loading{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #fff url("https://cdn.dribbble.com/users/3432202/screenshots/7090834/media/b27b345dc25d5ae622b249f604d0dfb0.gif") no-repeat center;
+		z-index: 9999;
+		
+	}
+</style>
+<body id="myPage" onload="myFunction()">
+  <div id="loading"></div>
+
+
+<!-- Navbar -->
+<nav>
+  <img src="D:\IWT\html\project\electrohub logo.PNG" width="180px" style="margin-right: 10%;border-radius: 10%;" class="logo">
+<div class="nav-links">
+  <ul style="background-color: rgb(12, 97, 159);border-radius: 10px;">
+      <li><input type="search" name="Search" id="search" placeholder="Search" style="border-radius: 10px;width: 250px;height: 20px;"><button><label for="search"><img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" width="10px" height="10px" style="border-radius: 10px;"></label></button></li>
+      <li><a href="file:///D:/IWT/html/html%20new/home.html"><h3><i>Home</i></h3></a></li>
+      <li><a href="file:///D:/IWT/html/html%20new/Smart_Phones.html"><h3><i>Smart Phones</i></h3></a></li>
+      <li><a href="#"><h3><i>Accessories</i></h3></a></li>
+      <li><a href="file:///D:/IWT/html/html%20new/TV-And-Home.html"><h3><i>Tv & Home</i></h3></a></li>
+<li><a href="file:///D:/IWT/html/html%20new/aboutus.html"><h3><i>About us</i></h3></a></li>
+
+  </ul>
+  <a href="file:///D:/IWT/html/html%20new/login.html"><button onclick="document.getElementById('alert').innerHTML=alert('CONFIRM FOR LOGOUT')" style="background-color:black;"><font color="white"><i id="alert" style="cursor: pointer;">LOG OUT</i></font></button></a>
+</div>
+</nav>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="D:\IWT\html\project\electrohub logo.PNG" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh snap! We just showed you a modal..</h4>
+      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Cool huh? Ok, enough teasing around..</p>
+      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2 style="font-family: Georgia ;font-size: 38px"><b>OUR TEAM</b></h2>
+
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <a href="https://www.instagram.com/bhullarheman/"><img src="C:\Users\HP\Pictures\Screenshots\WhatsApp Image 2022-01-17 at 7.57.36 PM (1).jpeg" style="width:200px ;height: 275px ;border-radius: 10px" ></a>
+  <h3>Heman Bhullar</h3>
+  <p>SmartPhones Designer</p>
+</div>
+
+<div class="w3-quarter">
+  <a href="https://www.instagram.com/_janinderjain/"><img src="C:\Users\HP\Pictures\Screenshots\WhatsApp Image 2022-01-17 at 7.57.18 PM.jpeg" style="width:200px ;height: 275px ;border-radius: 10px" ></a>
+  <h3>Janinder Jain</h3>
+  <p>Accessories Designer</p>
+</div>
+
+<div class="w3-quarter">
+  <a href="https://www.instagram.com/bhullarheman/"><img src="C:\Users\HP\Pictures\Screenshots\WhatsApp Image 2022-01-17 at 7.57.36 PM (2).jpeg"  style="width:200px ;height: 275px ; border-radius: 10px" ></a>
+  <h3>Vidit Kumar</h3>
+  <p>ElectroHub Animator</p>
+</div>
+
+<div class="w3-quarter">
+  <a href="https://www.instagram.com/bhullarheman/"><img src="C:\Users\HP\Pictures\Screenshots\WhatsApp Image 2022-01-17 at 7.57.36 PM.jpeg"  style="width:200px ;height: 275px ;border-radius: 10px" ></a>
+  <h3>Harsh Yadav</h3>
+  <p>TV and Home Designer</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+
+<h2 style="text-align: center; font-family: garamond">Our Work</h2>
+<p style="text-align: center;">"A curated selection of content to educate and inspire consumers in their purchase journey"<br> Content from a wide range of brands and influencers to be available to help drive engagement for users.
+Consumers continue to be at the centre of the Flipkart Ideas ecosystem with credible content being provided by subject-matter experts, brands and trusted publishers. This will help improve consumers’ shopping experiences with credible, inspiring and useful content, which will not only educate but also inspire them in their purchase journey.</p>
+
+</div>
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Sector 17, Market Place</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chandigarh, INDIA</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  0172-235555</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  electrohub@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="email" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  
+
+  
+  
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<script>
+  var preloader=document.getElementById("loading");
+  function myFunction(){
+      preloader.style.display= 'none';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <link rel="shortcut icon" type=""image/x-icon" href="D:\IWT\html\project\electrohub logo.PNG">
+<head>
+	
+        <title>Electrohub.com</title>
+        <style >
+            td{color: black}
+        nav{
+    width: 100%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+}
+@keyframes rotation {
+    from{
+        transform: rotateZ(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateZ(360deg) rotateY(360deg);
+    }
+    
+}
+.logo{
+    position: relative;
+    animation: rotation 4s ease-in-out infinite alternate;
+}
+.nav-links ul li:hover{
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+.nav-links ul li a:hover{
+	color: black;
+	text-shadow: 2px 2px darkslateblue;
+}
+#alert:hover{
+	text-shadow: 1px 1px rgb(238, 192, 255);
+}
+.tv{background-image: url("https://previews.123rf.com/images/moatsem059/moatsem0591111/moatsem059111100025/11406092-studio-tv-background.jpg");
+background-size:cover;
+width: 100%;
+height: 800px;}
+.home{
+    position: relative;
+    animation-name: rotate,colorchange;
+    animation-duration: 3s,3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rotate {
+    from{transform: rotateY(0deg);}
+    to{transform:  rotateY(180deg);}
+}
+@keyframes colorchange {
+    from{color: rgb(98, 10, 10);}
+    to{color:rgb(6, 6, 123)}
+}
+ table tr td{padding-right: 20px;
+padding-bottom: 20px;}
+       .box tr td img{
+            display: block;
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+            transition: 1s;
+        }
+        .box tr td img:hover{
+            transform:scale(1.1);
+            z-index:2;
+        }
+        #loading{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #fff url("https://cdn.dribbble.com/users/3432202/screenshots/7090834/media/b27b345dc25d5ae622b249f604d0dfb0.gif") no-repeat center;
+		z-index: 9999;
+		
+	}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body onload="myFunction()">
+    <div id="loading"></div>
+        <div style="background-color: rgb(0, 170, 255);">
+        <nav>
+            <img src="D:\IWT\html\project\electrohub logo.PNG" width="180px" style="margin-right: 10%;border-radius: 10%;" class="logo">
+        <div class="nav-links">
+            <ul style="background-color: rgb(55, 149, 189);border-radius: 10px;">
+                <li><input type="search" name="Search" id="search" placeholder="Search" style="border-radius: 10px;width: 250px;height: 20px;"><button><label for="search"><img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" width="10px" height="10px" style="border-radius: 10px;"></label></button></li>
+                <li><a href="file:///D:/IWT/html/html%20new/home.html"><h3><i>Home</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/Smart_Phones.html"><h3><i>Smart Phones</i></h3></a></li>
+            <li><a href="file:///D:/IWT/html/html%20new/accessories.html"><h3><i>Accessories</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/TV-And-Home.html"><h3><i>Tv & Home</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/aboutus.html"><h3><i>About Us</i></h3></a></li>
+            </ul>
+            <a href="file:///D:/IWT/html/html%20new/login.html"><button onclick="document.getElementById('alert').innerHTML=alert('CONFIRM FOR LOGOUT')" style="background-color:black;"><font color="white"><i id="alert" style="cursor: pointer;">LOG OUT</i></font></button></a>
+        </div>
+    </nav>
+    <div><div class="tv">
+         <h1 style="padding:400px;font-size: 80px;margin-top: -5px;" class="home"><i>TV & HOME</i></h1>
+        </div>
+    </div>
+    </div>
+<body bgcolor="white">
+<h1 style="background-color: Red;"><font color="Black"><center>Recomended For You</center></font></h1>
+<table class="box">
+<tr>
+<td><img src="https://m.media-amazon.com/images/I/71vZypjNkPS._SX425_.jpg"width="400"height="400"></td>
+<td>OnePlus 80 cm (32 inches) Y Series HD LED<br>Smart Android TV 32Y1 (Black) (2020 Model)<br>
+     <b>₹80000</b><br>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_SS450_.jpg"width="400"height="400"></td>
+<td>OnePlus 108 cm (43 inches) Y Series Full HD LED<br>Smart Android TV 43Y1 (Black) (2020 Model)<br>
+     <b>₹100000</b><br>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td><br>
+</tr>
+<tr>
+<td><img src="https://m.media-amazon.com/images/I/61JM7nC4OKL._SX679_.jpg"width="400"height="400"></td>
+<td>Mi 360° Home Security Camera 1080P l Full HD Picture l AI Powered Motion Detection l Infrared 
+    Night Vision | 360° Panorama | Talk Back Feature (2-Way Audio<br>
+    <b>₹20000</b><br>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://m.media-amazon.com/images/I/31Z1TDNvpRL._SY450_.jpg"width="400"height="400"></td>
+<td>QUBO Smart Home Security WiFi Camera (Black) | Trust of Hero Group| Intruder Alarm System |
+     Weatherproof | 1080p Full HD 2MP Camera | Works with Alexa & Google | Designed and Made in India<br>
+     <b>₹22000</b><br>
+     <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td></tr>
+<tr>
+<td><img src="https://images-eu.ssl-images-amazon.com/images/I/4198x1u1j1L._SX300_SY300_QL70_FMwebp_.jpg"width="400"height="400"></td>
+<td>I KALL IK-409 Multimedia Home Theatre System with Bluetooth, Aux, USB, FM Connectivity (4.1, Black)<br>
+     <b>₹50000</b><br>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://m.media-amazon.com/images/I/41ko+g-ASjL._SY300_SX300_.jpg"width="400"height="400"></td>
+<td>Zebronics BT4440RUCF 4.1 Channel Multimedia Speakers<br>
+     <b>₹60000</b><br>
+     <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td></tr>
+<tr>
+<td><img src="https://images-eu.ssl-images-amazon.com/images/I/31OZpLartbL._SX300_SY300_QL70_FMwebp_.jpg"width="400"height="400"></td>
+<td>HP Deskjet 1212 Colour Printer for Home Use, Compact Size, Reliable, and Affordable Printing,
+    Easy Set-up Through HP Smart App on Your PC Connected Through USB<br>
+<b>₹30000</b><br> 
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://m.media-amazon.com/images/I/71Td-My5f-L._SL1500_.jpg"width="400"height="400"></td>
+<td>HP Smart Tank 530 Dual Band WiFi Colour Printer with ADF, Scanner and Copier for Home/Office, 
+    High Capacity Tank (18000 Black and 8000 Colour) with Automatic Ink Sensor, 35 Sheet ADF<br>
+    <b>₹35000</b><br>
+    <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td></tr>
+<tr>
+<td><img src="https://m.media-amazon.com/images/I/510OsOFZ1KL._SL1100_.jpg"width="400"height="400"></td>
+<td>Eureka Forbes Wet & Dry Xpert Multipurpose Vacuum Cleaner with High power Suction & Blower with HEPA
+     Filter Auto Clean|Intelligent Dustbag Full Indicator|Vario Power|Wide Range of Accessories<br>
+     <b>₹25000</b><br>
+     <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>    
+<td><img src="https://images-eu.ssl-images-amazon.com/images/I/41LjTHcvnTL._SX300_SY300_QL70_FMwebp_.jpg"width="400"height="400"></td>
+<td>Geek Schoner A10 1400W Cyclonic Bagless Vacuum Cleaner for Home with 20 kPa Strong Suction Power,
+     3L Dust Container, 8M Power Cord, HEPA Filter, Blue<br>
+     <b>₹30000</b><br>
+     <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td></tr> 
+<tr>
+<td><img src="https://images-eu.ssl-images-amazon.com/images/I/41Q8GdcclqL._SX300_SY300_QL70_FMwebp_.jpg"width="400"height="300"></td>
+<td>HARRY EMPIRE®️ Compact Plug-in Electric 400 Watts Handy Room Heater, The Wall Outlet Space Heater,
+     Air Warmer Blower Adjustable Timer Digital Display for Office/Camper (Multicolor)<br>
+     <b>₹8000</b><br>
+     <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://images-eu.ssl-images-amazon.com/images/I/41voMS4MJHL._SX300_SY300_QL70_FMwebp_.jpg"width="400"height="300"></td>
+<td>acerpure Professional Air Purifier for Home by Acer, Fights Pollution, Virus and Bacteria,
+     3-in-1 HEPA Filter, Activated Carbon Filter, Air Quality Sensor, AC530-20W, white, Standard<br>
+     <b>₹10000</b><br>
+     <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+</tr>
+</table>
+<table class="box">
+     <center><h3 style="background-color: darkred;">TOP PRODUCTS</h3></center>
+     <td><img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_SS450_.jpg"width="200"height="200"></td>
+     <td>OnePlus LED<br>
+          <b>₹100000</b><br>
+     <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td><br>
+     <td><img src="https://m.media-amazon.com/images/I/31Z1TDNvpRL._SY450_.jpg"width="200"height="200"></td>
+     <td>QUBO Smart Camera<br>
+          <b>₹22000</b><br>
+          <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+     <td><img src="https://m.media-amazon.com/images/I/41ko+g-ASjL._SY300_SX300_.jpg"width="200"height="200"></td>
+     <td>Zebronics Speakers<br>
+          <b>₹60000</b><br>
+          <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+          <td><img src="https://images-eu.ssl-images-amazon.com/images/I/41voMS4MJHL._SX300_SY300_QL70_FMwebp_.jpg"width="200"height="200"></td>
+          <td>acerpure Air Purifier<br>
+               <b>₹10000</b><br>
+               <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+     </table>   
+     <script>
+        var preloader=document.getElementById("loading");
+        function myFunction(){
+            preloader.style.display= 'none';
+        }
+    </script> 
+</body>
+</html>

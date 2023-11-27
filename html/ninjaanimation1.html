@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bounceanimation{
+            from{
+                transform:translateY(100px);
+            }
+            25%{
+                transform:translateY(-100px);
+            }
+            50%{
+                transform:translateY(50px);
+            }
+            to{
+                transform:translateY(-50px);
+            }
+        }
+        div{
+            height:200px;
+            width:200px;
+            position: absolute;
+            top:40%;
+            left:40%;
+            background-color: crimson;
+            animation: bounceanimation 2s ease-in-out 4 alternate;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>

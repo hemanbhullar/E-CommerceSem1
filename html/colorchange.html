@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width:200px;
+            height:200px;
+            background-color: purple;
+            border-radius: 50%;
+        }
+        #inner{
+            background-color: white;
+            width: 100px;
+            height:100px;
+            position:absolute;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="inner"></div>
+    </div><br><br>
+    <button id="color" onclick="change()">Change Color</button><br><br>
+    <button id="shape" onclick="shape()">Change Shape</button>
+    <script>
+        var color='purple';
+        function change(){
+           if(color=='purple') {document.getElementById('box').style.backgroundColor='green';
+            color='green';}
+           else if(color=='green'){
+            document.getElementById('box').style.backgroundColor='red';
+            color='red';
+           }
+           else{
+            document.getElementById('box').style.backgroundColor='purple';
+            color='purple';
+           }
+        }
+        var sh='square';
+        function shape(){
+           if(sh=='square') {document.getElementById('inner').style.borderRadius='50%';
+            sh='circle';}
+           else if(sh=='circle'){
+            document.getElementById('inner').style.borderRadius='0%';
+            document.getElementById('inner').style.width='100px';
+            document.getElementById('inner').style.height='60px';
+            sh='rectangle';
+           }
+           else if(sh='rectangle'){
+            document.getElementById('inner').style.borderRadius='0%';
+            document.getElementById('inner').style.width='100px';
+            document.getElementById('inner').style.height='100px';
+            sh="square";
+           };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="shortcut icon" type=""image/x-icon" href="D:\IWT\html\project\electrohub logo.PNG">
+<head>
+    <title>Electrohub.com</title>
+    <style>
+        .main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,white);}
+        nav{
+    width: 100%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li:hover{
+    background-color: black;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+}
+.nav-links ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+a:hover{color: black;}
+@keyframes rotation {
+    from{
+        transform: rotateZ(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateZ(360deg) rotateY(360deg);
+    }
+    
+}
+.logo{
+    position: relative;
+    animation: rotation 4s ease-in-out infinite alternate;
+}
+@keyframes updown {
+    from{top: 0px;}
+    to{top:10px;}
+}
+#iphone{
+    position: relative;
+    animation: updown 4s ease-in-out infinite alternate;
+}
+#gift{
+    background-color: crimson;
+    width:300px;
+    height:150px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    animation: giftopen 4s ease-in-out 1 alternate;
+}
+#alert:hover{
+	text-shadow: 1px 1px rgb(238, 192, 255);
+}
+.smart{
+    position: relative;
+    animation: updowns 3s ease-in-out infinite alternate;
+    background-color: azure;
+}
+@keyframes updowns {
+    from{bottom: 0px;}
+    to{bottom: 50px;}
+}
+.image{
+    background-image: url("data:image/jpeg;base64,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");
+    background-size: contain;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url("https://cdn.dribbble.com/users/3432202/screenshots/7090834/media/b27b345dc25d5ae622b249f604d0dfb0.gif") no-repeat center;
+    z-index: 9999;
+    
+}
+    </style>
+</head>
+<body onload="myFunction()">
+    <div id="loading"></div>
+        <div class="main">
+        <nav>
+        <div class="logo">
+            <img src="C:\Users\HP\Pictures\Screenshots\electrohublogo.PNG" width="150px" style="border-radius: 10px;">
+        </div>
+        <div class="nav-links">
+            <ul style="background-color: rgb(14, 85, 148);border-radius: 20px;">
+                <li><input type="search" name="Search" id="search" placeholder="Search" style="border-radius: 10px;width: 250px;height: 20px;"><button style="border-radius: 50%;"><label for="search"><img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" width="10px" height="10px"></label></button></li>
+                <li><a href="file:///D:/IWT/html/html%20new/home.html"><h3><i>Home</i></h3></a></li>
+                <li><a href="#"><h3><i>Smart Phones</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/accessories.html"><h3><i>Accessories</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/TV-And-Home.html"><h3><i>Tv and Home</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/aboutus.html"><h3><i>About us</i></h3></a></li>
+            </ul>
+            <a href="file:///D:/IWT/html/html%20new/login.html"><button onclick="document.getElementById('alert').innerHTML=alert('CONFIRM FOR LOGOUT')" style="background-color:black;"><font color="white"><i id="alert" style="cursor: pointer;">LOG OUT</i></font></button></a>
+        </div>
+    </nav>
+    <div class="image">
+    <div class="smart">
+        <center><h1>Smart Phones</h1></center>
+    </div>
+    </div>
+    <table>
+        <tr style="background-color: salmon;">
+            <th colspan="9">RECOMENDED FOR YOU</th>
+        </tr>
+        <hr>
+    <tr style="background-color: azure;">
+    <td><a href="file:///D:/IWT/html/html%20new/Redmi9a.html"><img src="C:\Users\HP\Pictures\Screenshots\mobile.png" width="100px"style="margin-right: 20px; margin-left: 20px;"></a></td>
+    <td><a href="file:///D:/IWT/html/html%20new/Redmi9a.html" style="text-decoration: none;color: black;" ><h2><u>Redmi 9A</u></h2></a> (Nature Green, 2GB RAM, 32GB Storage) |<br> 2GHz Octa-core Helio G25 Processor <br>| 5000 mAh Battery<br>
+        <h3>₹8,759.04<font color="red">(40% off)</font></h3>
+    <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+    <td><a href="file:///D:/IWT/html/html%20new/TecnoSpark7T.html"><img src="C:\Users\HP\Downloads\Web capture_13-12-2021_171055_www.amazon.in.jpeg" width="100px"style="margin-right: 20px; margin-left: 20px;"></a></td>
+    <td><a href="file:///D:/IWT/html/html%20new/TecnoSpark7T.html" style="text-decoration: none;color: black;" ><h2><u>Tecno Spark 7T</u></h2></a>(Jewel Blue, 4GB RAM, 64GB Storage) <br>6000 mAh Battery|<br> 48 MP AI Dual Rear Camera<br><br>
+    <h3>₹8,899.00</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://m.media-amazon.com/images/I/71poFSdDs5S._AC_UY327_FMwebp_QL65_.jpg" width="100px" style="margin-right: 20px; margin-left: 20px;"></td>
+    <td><h2><u>OPPO A74 5G</u></h2>(Fantastic Purple,6GB RAM,128GB Storage)<br> with No Cost EMI<br>5G Android Smartphone | 5000 mAh Battery| 18W Fast Charge
+    <h3>₹10000.00</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://m.media-amazon.com/images/I/71oieHcp4WL._AC_UY327_FMwebp_QL65_.jpg" width="100px"style="margin-right: 20px; margin-left: 20px;"></td>
+    <td><h2><u>Redmi Note 10S</u></h2>(Shadow Black, 6GB RAM, 64GB Storage) <br> - Super Amoled Display | 64 MP Quad Camera<br><br>
+    <h3>₹12800.50</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+    </tr>
+    </table>
+    <table>
+        <tr style="background-color: burlywood;"><th colspan="9">
+            Most Gifted
+        </th></tr>
+    <tr style="background-color: azure;">
+    <td><a href="file:///D:/IWT/html/html%20new/Redmi9a.html"><img src="https://m.media-amazon.com/images/I/51Pn4LI0exL._AC_UY327_FMwebp_QL65_.jpg" width="100px"style="margin-right: 20px; margin-left: 20px;"></a></td>
+    <td><a href="file:///D:/IWT/html/html%20new/Redmi9a.html" style="text-decoration: none;color: black;"><h2><u>Vivo Y33T</u></h2></a> (Mid Day Dream, 8GB RAM) |<br> with No Cost EMI <br>/Additional Exchange Offers<br><br>
+        <h3>₹25000.00</h3>
+    <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+    <td><img src="https://m.media-amazon.com/images/I/71KVeQql77S._AC_UY327_FMwebp_QL65_.jpg" width="160px"style="margin-right: 20px; margin-left: 20px;"></td>
+    <td><h2><u>OnePlus Nord 2 5G</u></h2>(Gray Sierra, 8GB RAM, 128GB Storage)<br><br><br><br>
+    <h3>₹12800.00</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://m.media-amazon.com/images/I/81-tqKsrTuL._AC_UY327_FMwebp_QL65_.jpg" width="160px"style="margin-right: 20px; margin-left: 20px;"></td>
+    <td><h2><u>Samsung Galaxy M52 5G</u></h2>(Mystery Black, 6GB RAM, 128GB Storage) with No Cost EMI<br>/Additional Exchange Offers<br><br><br>
+    <h3>₹18600.00</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="https://m.media-amazon.com/images/I/519KIlHA2wL._AC_UY327_FMwebp_QL65_.jpg" width="140px" height="200px" style="margin-left: 20px;margin-right: 20px;"></td>
+    <td><h2><u>Apple iPhone XR 64GB Black </u></h2>(includes EarPods, power adapter) <br><br><br><br>
+    <h3>₹12800.00</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+    </table>
+    <hr>
+    </div>
+    <table>
+        <tr>
+        <td><video  width="750px" height="500" loop controls muted autoplay>
+            <source src="C:\Users\HP\Downloads\REDMI 9A Trailer Commercial Official Video HD _ REDMI 9A by Xiaomi.mp4"
+
+                    type="video/mp4">.
+            
+        </video></td>
+        <td><video controls width="750px" height="500" loop controls muted autoplay>
+            <source src="C:\Users\HP\Downloads\Spark 7T _ 48 MP Dual Camera _ 6000mAh Battery.mp4"
+
+                    type="video/mp4">.
+            
+        </video></td>
+        </tr>
+        </table>
+    <hr>
+    <div>
+    <table>
+        <tr style="background-color: red;"><th colspan="9">
+            Hot New Release
+        </th></tr>
+    <tr style="background-color: azure;">
+    <td><a href="file:///D:/IWT/html/html%20new/Redmi9a.html"><img src="C:\Users\HP\Pictures\Screenshots\mobile.png" width="100px"></a></td>
+    <td><a href="file:///D:/IWT/html/html%20new/Redmi9a.html" style="text-decoration: none;color: black;" ><h2><u>Redmi 9A</u></h2></a> (Nature Green, 2GB RAM, 32GB Storage) |<br> 2GHz Octa-core Helio G25 Processor <br>| 5000 mAh Battery<br>
+        <h3>₹25000.00</h3>
+    <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+    <td><img src="C:\Users\HP\Downloads\Web capture_13-12-2021_171055_www.amazon.in.jpeg" width="100px"></td>
+    <td><h2><u>Tecno Spark 7T</u></h2>(Jewel Blue, 4GB RAM, 64GB Storage) <br>6000 mAh Battery|<br> 48 MP AI Dual Rear Camera<br>
+    <h3>₹12800.00</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="C:\Users\HP\Downloads\OPPO A31.jpeg" width="100px"></td>
+    <td><h2><u>Oppo A31</u></h2>(Mystery Black, 6GB RAM, 128GB Storage)<br> with No Cost EMI<br>/Additional Exchange Offers
+    <h3>₹18600.00</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+<td><img src="C:\Users\HP\Downloads\Web capture_13-12-2021_171055_www.amazon.in.jpeg" width="100px"></td>
+    <td><h2><u>Tecno Spark 7T</u></h2>(Jewel Blue, 4GB RAM, 64GB Storage) <br>6000 mAh Battery|<br> 48 MP AI Dual Rear Camera<br>
+    <h3>₹12800.00</h3>
+<button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></td>
+    </table>
+    </div>
+    <table>
+        <tr>
+            <td>        <video controls loop muted autoplay width="800" height="500">
+            <source src="C:\Users\HP\Downloads\Introducing iPhone 13 Pro _ Apple.mp4" type="video/mp4">
+        </video></td>
+        <td><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-1.jpg" width="600"></td>
+        </tr>
+    </table>
+    <div id="iphonestore">
+        <h1 style="text-align: center;color: black; background-color: blue;" ><i id="iphone">Latest Iphones</i></h1>
+        <div class="iphones" style="display:-webkit-inline-box;">
+            <div class="iphone1">
+                <a href="file:///D:/IWT/html/project/iphone13promax.html" style="text-decoration: none;"><img src="data:image/jpeg;base64,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" width="250px"></a>
+            </div>
+            <div><a href="file:///D:/IWT/html/project/iphone13promax.html" style="text-decoration: none;color: black;"><h1 style="margin-left: 50px;">Apple iPhone 13 Pro Max (128GB) - Sierra Blue</h1></a>
+            <p style="color: rgb(62, 60, 60);margin-left: 50px;">17 cm (6.7-inch) Super Retina XDR display with ProMotion for a faster, more responsive feel<br>
+                Cinematic mode adds shallow depth of field and shifts focus automatically in your videos<br><b>₹1,50,000.00</b><br><br>
+                <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></div></p>
+        </div>
+        <div id="advertisement" style="float: right; overflow: hidden;">
+            <h4 style="margin-bottom: 0px;"><spam onclick="document.getElementById('advertisement').style.width='0px'" style="cursor: pointer;">close(X)</spam>&ensp;&ensp; Advertisement</h4>
+            <a href="https://visme.co/blog/visual-advertising-techniques/"><img src="https://visme.co/blog/wp-content/uploads/2019/08/Behind-the-Scenes.png" width="300px"></a></div>
+        <div style="display: -webkit-inline-box;">
+         <div class="iphone2" style="margin-left: -50px;">
+                <a href="#latestiphone" style="text-decoration: none;"><img src="https://m.media-amazon.com/images/I/61sDyXAepuL._SL1500_.jpg" width="350px" style="margin-top: -25px;"></a>
+                </div>
+            <div><h1 style=" margin-top: 50px;">Apple iPhone 13 Pro(128GB) - Sierra Blue</h1>
+            <p style="color: rgb(62, 60, 60);">17 cm (6.7-inch) Super Retina XDR display with ProMotion for a faster, more responsive feel<br>
+                Cinematic mode adds shallow depth of field and shifts focus automatically in your videos<br><b>₹1,29,000.00</b></p>
+                <button><a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;">BUY NOW</a></button></div>
+                <div id="advertisement1" style="float: right;overflow: hidden; margin-top: 10px;margin-left: 300px;">
+                    <h4 style="margin-bottom: 0px;"><spam onclick="document.getElementById('advertisement1').style.width='0px'" style="cursor: pointer;">close(X)</spam>&ensp;&ensp; Advertisement</h4>
+                    <a href="https://visme.co/blog/visual-advertising-techniques/"><img src="https://visme.co/blog/wp-content/uploads/2019/08/Behind-the-Scenes.png" width="300px"></a></div>
+        </div>
+        <hr>
+        <h1 style="text-align: center;background-image: linear-gradient(blue,white);">GIFTS FOR USERS BY PLAYING GAMES</h1>
+        <center><a href="https://www.offgamers.com/"><button style="size: 100px;">Play Games</button></a></center>
+        <center><div class="tenor-gif-embed" data-postid="13836594" data-share-method="host" data-aspect-ratio="1" data-width="40%"><a href="https://tenor.com/view/unwrap-present-gift-torture-wrap-wrapping-gif-13836594">Unwrap Present Sticker</a>from <a href="https://tenor.com/search/unwrap-stickers">Unwrap Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></div></center>
+        
+        <hr>
+        &copy;   Heman Bhullar(Team Leader)
+        <script>
+            var preloader=document.getElementById("loading");
+            function myFunction(){
+                preloader.style.display= 'none';
+            }
+        </script>
+</body>
+</html>

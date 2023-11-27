@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jbl flip 5</title>
+    <style>
+        .main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,white);}
+        nav{
+    width: 100%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;}
+    .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    border: 2px dotted black;
+    border-radius: 50%;
+}
+.nav-links ul li:hover{
+    background-color: darkcyan;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration: none;
+}
+        h1{
+            font-size: 100px;
+            background-color: rgb(23, 22, 22);
+        }
+        .feature{
+            float: left;
+        }
+        @keyframes colorchange {
+            from{color:black}
+            to{color:red}
+        }
+        @keyframes transform {
+            from{transform: translateX(0px);}
+            to{transform: translateX(750px);}
+        }
+        .feature1{
+            position: relative;
+            animation-name: colorchange,transform;
+            animation-duration: 4s,7s;
+            animation-iteration-count: infinite,infinite;
+            animation-duration: alternate,alternate;
+        }
+        @media screen and (max-width:1100px){
+            video{width:500px;}
+        }
+        @media  screen and (max-width:900px) {
+            video{width: 300px;}
+        }
+        .list p{color: rgb(98, 95, 95);}
+        #more{display:none}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="D:\IWT\html\project\electrohub logo.PNG" width="150px" style="border-radius: 20px;">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="file:///D:/IWT/html/html%20new/home.html"><font color="black"><h3><i>Home</i></h3></font></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/Smart_Phones.html"><h3><i>Smart Phones</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/accessories.html"><h3><i>Accessories</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/TV-And-Home.html"><h3><i>Tv and Home</i></h3></a></li>
+                <li><a href="file:///D:/IWT/html/html%20new/aboutus.html"><h3><i>About us</i></h3></a></li>
+            </ul>
+            <a href="file:///D:/IWT/html/html%20new/login.html"><button onclick="document.getElementById('alert').innerHTML=alert('CONFIRM FOR LOGOUT')" style="background-color:black;"><font color="white"><i id="alert" style="cursor: pointer;">LOG OUT</i></font></button></a>
+        </div>
+    </nav>
+    <h1 style="text-align: center;color: honeydew;">JBL flip 5</h1>
+    <div class="feature">
+        <video loop muted autoplay width="800px" height="100%">
+            <source src="C:\Users\HP\Downloads\JBL Flip 5 _ Portable Waterproof Speaker (1).mp4">
+        </video></td>
+    </div>
+    <div style="background-color: orange;overflow: hidden;">
+        <h2 class="feature1">Features are given below:</h2>
+    </div>
+    <div class="list">
+        <ul style="margin-left:52%;">
+            <li><h3 style="font-size: 30px;">Sounds better than ever:</h3></li>
+            <p>Feel your music. Flip 5's all new racetrack-shaped driver delivers high output. Enjoy booming bass in a compact package.</p>
+            <li><h3 style="font-size: 30px;">Up to 12 Hours of Playtime</h3></li>
+            <p>Don't sweat the small stuff like charging your battery. Flip 5 gives you up to 12 hours of playtime. Keep the music going longer and louder with JBL's signature sound.</p>
+            <spam><spam id="less">...</spam><spam id="more"><ul><li><h2>Make a splash with IPX7 waterproof design</h2></li></ul> Bring your speakers anywhere. Pool party? Perfect. Sudden cloudburst? Covered. Bash on the beach? Flip 5 is IPX7 waterproof up to three-feet deep for fearless outdoor entertainment.</spam></spam>
+            <button onclick="myFunction()" id="mybtn">Read more</button>
+            <script>
+                function myFunction(){
+                  var less=document.getElementById('less');
+                  var moreText=document.getElementById('more');
+                  var btnText=document.getElementById('mybtn');
+                  if (less.style.display==="none"){
+                      less.style.display="inline";
+                      btnText.innerHTML="Read more";
+                      moreText.style.display="none";
+                  }
+                  else{
+                      less.style.display="none";
+                      btnText.innerHTML="Read less";
+                      moreText.style.display="inline";
+                  }
+                }
+            </script>
+            <a href="file:///D:/IWT/html/html%20new/Buynow.html" style="text-decoration: none;color: black;"><br><br><b>₹9,900.00</b><br><br><button>Buy Now</button></a>
+        </ul>
+    </div>
+    <center><div>
+        <spam><b>Color selection:</b></spam>
+        <form method="post">
+            <select name="color" id="color" required>
+                <option value="blue" style="background-color: rgb(110, 110, 209);"></option>
+                <option value="black" style="background-color: black;"></option>
+                <option value="white" style="background-color: white;"></option>
+                <option value="red" style="background-color: red;"></option>
+            </select>
+            <input type="submit" value="select">
+         </form>   
+    </div></center>
+</body>
+</html>

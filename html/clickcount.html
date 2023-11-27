@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" style="margin: 300px;">
+      <center><div id="box">
+       
+      </div>
+      <p style="font-family: sans-serif;font-weight: 700;">Box Clicked <scam id='count'>0</scam> Times</p>
+    </div></center>
+    <script>
+        var count=0;
+        var box=document.getElementById('box');
+        box.style.backgroundColor="red";
+        box.style.width="200px";
+        box.style.height="200px";
+        box.addEventListener('click',function(){
+             count=count+1;
+             document.getElementById('count').innerHTML=count;
+        });
+    </script>
+</body>
+</html>
